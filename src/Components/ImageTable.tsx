@@ -34,7 +34,7 @@ class ImageTable extends React.Component<typeImageTableProps, typeImageTableStat
       window.addEventListener("resize", () => {
         clearTimeout(queue);
         queue = setTimeout(() => {
-          const raneNum = window.innerWidth > 500 ? Math.floor(window.innerWidth / 300) : 3; {}
+          const raneNum = window.innerWidth > 500 ? Math.floor(window.innerWidth / 300) : 3;
           this.setState({ raneNum: raneNum });
         }, 500);
       });
